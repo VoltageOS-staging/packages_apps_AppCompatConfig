@@ -1,6 +1,13 @@
 import com.android.build.gradle.internal.utils.getBuildSrcPlugins
 
 plugins {
-    id("com.android.application") version "8.13.1" apply false
+    id("com.android.application") version "9.0.0" apply false
     id("com.google.protobuf") version "0.9.5" apply false
+}
+
+buildscript {
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0")
+        classpath("com.google.devtools.ksp:symbol-processing-gradle-plugin:2.3.5")
+    }
 }
