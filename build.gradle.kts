@@ -8,6 +8,6 @@ plugins {
 buildscript {
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.20")
-        classpath("com.google.devtools.ksp:symbol-processing-gradle-plugin:2.3.5")
+        classpath("com.google.devtools.ksp:symbol-processing-gradle-plugin:2.3.9")
     }
 }
