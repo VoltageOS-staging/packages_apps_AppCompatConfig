@@ -55,12 +55,14 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = true
+            isShrinkResources = true
             if (useKeystoreProperties) {
                 signingConfig = signingConfigs.getByName("release")
             }
         }
         getByName("debug") {
             isMinifyEnabled = true
+            isShrinkResources = true
         }
     }
 }
